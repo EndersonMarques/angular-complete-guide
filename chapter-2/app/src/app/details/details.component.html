@@ -1,0 +1,8 @@
+
+<button (click)="clickBotton()">Clique Aqui e veja a Mágica !!</button>
+<p *ngIf="detailsActive">Apenas uma Menssagem de Teste</p>
+<p *ngFor="let logs of log, index as i"
+    [ngStyle]="{'backgroundColor': i>4 ? 'blue' : ''}"
+    [ngClass]="{'colorFont': i>4}"
+
+>{{logs}}</p>
